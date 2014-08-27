@@ -1,0 +1,1 @@
+var sosApp = angular.module('sosApp', []);

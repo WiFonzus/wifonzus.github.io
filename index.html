@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="sosApp"> <!-- Make sure to rewire this directive with your app name -->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>SOS Abbraccio</title>
+	<!-- JQUERY -->
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js" type="text/javascript"></script>
+	<!-- NORMALIZE -->
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<!-- APP STYLES -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	
+	<!-- ANGULAR+WINK - APP - ETC -->
+	<script src="js/angular.min.js" type="text/javascript"></script>
+	<script src="js/app.js" type="text/javascript"></script>
+	<!-- LESSJS -->
+	<script src="js/less-1.7.4.min.js" type="text/javascript"></script>
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Rajdhani:400,600,700' rel='stylesheet' type='text/css'>
+	<!-- EDGE -->
+	<script src="js/meny.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/demo.css" type="text/css">
+	<script type="text/javascript">
+	var meny = Meny.create({
+    // The element that will be animated in from off screen
+    menuElement: document.querySelector( '.meny' ),
+
+    // The contents that gets pushed aside while Meny is active
+    contentsElement: document.querySelector( '.contents' ),
+
+    // The alignment of the menu (top/right/bottom/left)
+    position: 'right',
+
+    // The height of the menu (when using top/bottom position)
+    height: 100,
+
+    // The width of the menu (when using left/right position)
+    width: 260,
+
+    // The angle at which the contents will rotate to.
+    angle: 30,
+
+    // The mouse distance from menu position which can trigger menu to open.
+    threshold: 40,
+
+    // Width(in px) of the thin line you see on screen when menu is in closed position.
+    overlap: 6,
+
+    // The total time taken by menu animation.
+    transitionDuration: '0.5s',
+
+    // Transition style for menu animations
+    transitionEasing: 'ease',
+
+    // Gradient overlay for the contents
+    gradient: 'rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.0) 100%)',
+
+    // Use mouse movement to automatically open/close
+    mouse: false,
+
+    // Use touch swipe events to open/close
+    touch: true
+});</script>
+</head>
+<body>
+<script type='text/javascript'>(function () { var done = false;
+													  var script = document.createElement('script');script.async = truescript.type = 'text/javascript';script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript';	document.getElementsByTagName('HEAD').item(0).appendChild(script);script.onreadystatechange = script.onload = function (e) {if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {var w = new PCWidget({ c: 'b87b8f60-07d0-4225-9a37-ede041cde03e', f: true });done = true;}};})();</script>
+	<div ng-include="'boil.html'"></div>  <!-- Home Template-->	
+	
+</body>
+</html>
